@@ -8,7 +8,7 @@ int main(const int argc, const char* argv[])
 		printf("enter x-mas tree height\n");
 		exit(EXIT_FAILURE);
 	}
-	int height = atoi(argv[1]);
+	const int height = atoi(argv[1]);
 
 
 	for(int i = 0; i < height; i++)
