@@ -9,14 +9,13 @@ int main(const int argc, const char* argv[])
 		exit(EXIT_FAILURE);
 	}
 	int height = atoi(argv[1]);
-	height = height*2;
 
 
-	for(int i = 0; i <height/2; i++)
+	for(int i = 0; i < height; i++)
 	{
-		for(int j = 0; j <  height; j++)
+		for(int j = 0; j <  height*2; j++)
 		{
-			if(j > height/2 + i || j < height/2 - i)
+			if(j > height + i || j < height - i)
 				printf(" ");
 			else
 				printf("*");
@@ -25,20 +24,17 @@ int main(const int argc, const char* argv[])
 		}
 		printf("\n");
 
-		//if(i>height/2)
-		//	break;
-
 
 	}
 	int k=0;
-	while(k < height/2)
+	while(k < height)
 	{
 		printf(" ");
 		k++;
-		}
+	}
 	printf("*\n");
 
-	
+
 
 
 }
